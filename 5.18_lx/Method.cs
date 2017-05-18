@@ -11,7 +11,7 @@ namespace _5._18_lx
         static void Main(string[] args)
         {
             GetName("狗蛋");
-            Console.ReadKey();
+            
         }
 
         /// <summary>
