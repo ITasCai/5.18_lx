@@ -30,7 +30,10 @@ namespace _5._18_lx
             p.age = 23;
             p.height = 180;
             p.sex = Gender.nan;
-            string str = Convert.ToString(p.sex)==Convert.ToString(Gender.nan)?"男":"女";
+           // string str = Convert.ToString(p.sex)==Convert.ToString(Gender.nan)?"男":"女";
+
+            //string str=p.sex==0?"男":"女";
+           // string str = p.sex == Gender.nan ? "男" : "女";
 
             Person p1;
             p1.name = "李四";
@@ -38,7 +41,9 @@ namespace _5._18_lx
             p1.height = 170;
             p1.sex = Gender.nv;
 
-            Console.WriteLine("姓名:{0},年龄：{1},身高：{2},性别：{3}",p.name,p.age,p.height,str);
+            Console.WriteLine("姓名:{0},年龄：{1},身高：{2},性别：{3}",p.name,p.age,p.height, p.sex == Gender.nan ? "男" : "女");
+
+            Console.WriteLine("姓名:{0},年龄：{1},身高：{2},性别：{3}", p1.name, p1.age, p1.height, p1.sex == Gender.nan ? "男" : "女");
 
             Console.ReadKey(); 
             #endregion
