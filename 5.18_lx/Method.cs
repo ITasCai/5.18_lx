@@ -8,5 +8,9 @@ namespace _5._18_lx
 {
     class Method
     {
+        static void Main(string[] args)
+        {
+
+        }
     }
 }
