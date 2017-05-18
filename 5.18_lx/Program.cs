@@ -9,10 +9,15 @@ namespace _5._18_lx
 
     //定义结构
     struct Person {
-        string name;
-        int age;
-        double height;
-        string sex;
+        public string name;
+        public int age;
+        public double height;
+        public Gender sex;
+    }
+
+    //枚举
+    enum Gender {
+        nan,nv
     }
     class Program
     {
@@ -20,6 +25,21 @@ namespace _5._18_lx
         {
             #region 
 
+            Person p;
+            p.name = "张三";
+            p.age = 23;
+            p.height = 180;
+            p.sex = Gender.nan;
+
+            Person p1;
+            p1.name = "李四";
+            p1.age = 22;
+            p1.height = 170;
+            p1.sex = Gender.nv;
+
+            Console.WriteLine("姓名:{0},年龄：{1},身高：{2},性别：{3}",p.name,p.age,p.height,p.sex);
+
+            Console.ReadKey(); 
             #endregion
         }
     }
