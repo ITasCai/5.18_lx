@@ -45,6 +45,9 @@ namespace _5._18_lx
 
             Console.WriteLine("姓名:{0},年龄：{1},身高：{2},性别：{3}", p1.name, p1.age, p1.height, p1.sex == Gender.nan ? "男" : "女");
 
+
+            Console.WriteLine(string.Format("姓名:{0},年龄：{1},身高：{2},性别：{3}", p1.name, p1.age, p1.height, p1.sex == Gender.nan ? "男" : "女"));
+
             Console.ReadKey(); 
             #endregion
         }
